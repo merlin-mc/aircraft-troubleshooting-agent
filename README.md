@@ -1,7 +1,7 @@
 民航机务维修排故智能助手 Aircraft Troubleshooting Agent
 
 项目简介
-本项目是一个基于多源数据与大语言模型（LLM）的民航机务维修排故智能助手。旨在帮助机务维修人员快速定位飞机故障、高效检索维修手册，并提供智能化的排故建议，从而提升一线维修效率，降低人为差错
+本项目是一个基于多源数据与大语言模型LLM的民航机务维修排故智能助手。旨在帮助机务维修人员快速定位飞机故障、高效检索维修手册，并提供智能化的排故建议，从而提升一线维修效率，降低人为差错
 
 核心功能
 智能问答与排故引导：基于大模型，针对机务人员的自然语言提问给出专业的排故指导
@@ -13,8 +13,8 @@
 技术栈
 后端 Backend
 语言：Python 3.10+
-框架：FastAPI / Flask (根据实际情况修改)
-LLM 编排：LangChain (根据实际情况修改)
+框架：FastAPI/Flask 
+LLM 编排：LangChain
 向量数据库：FAISS
 数据库：MySQL
 核心依赖：requirements.txt
@@ -42,33 +42,40 @@ aircraft-troubleshooting-agent/
         ├── package.json
         └── src/
 快速开始
-'''
+
 1）后端启动
+```
 #进入后端目录
 cd backend
-
+```
+```
 #创建并激活虚拟环境 (Windows)
 python -m venv .venv
 .venv\Scripts\activate
-
+```
+```
 #安装依赖
 pip install -r requirements.txt
-
+```
+```
 #配置环境变量
-# 复制 .env.example 为 .env，填入你的 API Key 和数据库密码
+#复制.env.example为.env填入你的API Key和数据库密码
 cp .env.example .env
-
+```
+```
 #启动后端
 python main.py
-'''
+```
 2）前端启动
-'''
+```
 #进入前端目录
 cd frontend/ai-assistant
-
+```
+```
 #安装依赖
 npm install
-
+```
+```
 #启动开发服务器
 npm run dev
-'''
+```
